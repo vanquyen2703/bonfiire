@@ -1,5 +1,5 @@
 //Owl carousel
-$('.owl-carousel').owlCarousel({
+$('.owl-theme').owlCarousel({
     loop:true,
     margin:30,
     nav:true,
@@ -15,6 +15,34 @@ $('.owl-carousel').owlCarousel({
         },
         1024:{
             items:4
+        },
+        640:{
+            items:2
+        },
+        480:{
+            items:2
+        },
+        0:{
+            items:1
+        }
+    }
+});
+
+$('.owl-blogs').owlCarousel({
+    item:3,
+    loop:true,
+    margin:30,
+    nav:true,
+    navigation : true,
+    responsive:{
+        1920:{
+            items:3
+        },
+        1200:{
+            items:3
+        },
+        1024:{
+            items:3
         },
         640:{
             items:2

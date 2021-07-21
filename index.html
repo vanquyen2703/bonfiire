@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" type="type/css" href="assets/css/style.css">
-    <link rel="stylesheet/less" href="assets/less/style.less">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet/less" href="assets/less/style.less"> -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <!-- js -->
@@ -32,7 +32,7 @@
                     <div class="head-right">
                         <div class="cart"><a href=""><i class="fas fa-shopping-cart"></i></a></div>
                         <div class="navbar">
-                           <i class="fas fa-bars"></i>
+                            <i class="fas fa-bars"></i>
                         </div>
                         <div class="nav-overlay">
                             <ul class="header-overlay">
@@ -40,9 +40,14 @@
                                     <label id="close-button" class="menu-close" for="check">
                                         <i class="fas fa-times"></i>
                                     </label>
-                                    <label id="search-button" for="search">
-                                        <i class="fas fa-search"></i>
-                                    </label>
+                                </li>
+                                <li class="item">
+                                    <div class="search">
+                                        <form>
+                                            <a href="#" class="icon-search"><i class="fas fa-search"></i></a>
+                                            <input id="form-search" type="text" class="form-control">
+                                        </form>
+                                    </div>
                                 </li>
                                 <li class="item">
                                     <a href="#">Home</a>
@@ -59,14 +64,11 @@
                                 <li class="item">
                                     <a href="#">Contact</a>
                                 </li>
-                                <li class="item search">
-                                    <a href="#"><i class="fas fa-search"></i></a>
-                                </li>
                             </ul>
                             <label for="check" class="overlay">
                             </label>
 
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -296,53 +298,58 @@
                 <h2>Blog update</h2>
             </div>
             <div class="blogs-all">
-                <div class="blogs-all__item">
-                    <div class="blogs-all__item--img">
-                        <img src="assets/images/blog1.png" alt="bonfire" class="img-fluid">
-                    </div>
-                    <div class="blogs-all__item--content">
-                        <div class="blog-date"><a href="">July 14th, 2016 </a></div>
-                        <div class="blog-title"><a href="">8 Things I’ve Learned from 8 Year of Bonfire</a></div>
-                        <div class="blog-analytic">
-                            <div class="info info-view">
-                                <i class="fas fa-eye"></i> 941 Views
-                            </div>
-                            <div class="info info-like">
-                                <a href="#" class="apr-post-like"><i class="far fa-heart"></i>&nbsp;27&nbsp;Likes</a>
+                <div class="owl-carousel owl-blogs">
+                    <div class="blogs-all__item">
+                        <div class="blogs-all__item--img">
+                            <img src="assets/images/blog1.png" alt="bonfire" class="img-fluid">
+                        </div>
+                        <div class="blogs-all__item--content">
+                            <div class="blog-date"><a href="">July 14th, 2016 </a></div>
+                            <div class="blog-title"><a href="">8 Things I’ve Learned from 8 Year of Bonfire</a></div>
+                            <div class="blog-analytic">
+                                <div class="info info-view">
+                                    <i class="fas fa-eye"></i> 941 Views
+                                </div>
+                                <div class="info info-like">
+                                    <a href="#" class="apr-post-like"><i
+                                            class="far fa-heart"></i>&nbsp;27&nbsp;Likes</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="blogs-all__item">
-                    <div class="blogs-all__item--img">
-                        <img src="assets/images/blog2.png" alt="bonfire" class="img-fluid">
-                    </div>
-                    <div class="blogs-all__item--content">
-                        <div class="blog-date"><a href="">July 14th, 2016 </a></div>
-                        <div class="blog-title"><a href="">How I Stay Inspired and Come Up with New Ideas</a></div>
-                        <div class="blog-analytic">
-                            <div class="info info-view">
-                                <i class="fas fa-eye"></i> 941 Views
-                            </div>
-                            <div class="info info-like">
-                                <a href="#" class="apr-post-like"><i class="far fa-heart"></i>&nbsp;27&nbsp;Likes</a>
+                    <div class="blogs-all__item">
+                        <div class="blogs-all__item--img">
+                            <img src="assets/images/blog2.png" alt="bonfire" class="img-fluid">
+                        </div>
+                        <div class="blogs-all__item--content">
+                            <div class="blog-date"><a href="">July 14th, 2016 </a></div>
+                            <div class="blog-title"><a href="">How I Stay Inspired and Come Up with New Ideas</a></div>
+                            <div class="blog-analytic">
+                                <div class="info info-view">
+                                    <i class="fas fa-eye"></i> 941 Views
+                                </div>
+                                <div class="info info-like">
+                                    <a href="#" class="apr-post-like"><i
+                                            class="far fa-heart"></i>&nbsp;27&nbsp;Likes</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="blogs-all__item">
-                    <div class="blogs-all__item--img">
-                        <img src="assets/images/blog3.png" alt="bonfire" class="img-fluid">
-                    </div>
-                    <div class="blogs-all__item--content">
-                        <div class="blog-date"><a href="">July 14th, 2016 </a></div>
-                        <div class="blog-title"><a href="">Wait, there’s a human on the other end?</a></div>
-                        <div class="blog-analytic">
-                            <div class="info info-view">
-                                <i class="fas fa-eye"></i> 941 Views
-                            </div>
-                            <div class="info info-like">
-                                <a href="#" class="apr-post-like"><i class="far fa-heart"></i>&nbsp;27&nbsp;Likes</a>
+                    <div class="blogs-all__item">
+                        <div class="blogs-all__item--img">
+                            <img src="assets/images/blog3.png" alt="bonfire" class="img-fluid">
+                        </div>
+                        <div class="blogs-all__item--content">
+                            <div class="blog-date"><a href="">July 14th, 2016 </a></div>
+                            <div class="blog-title"><a href="">Wait, there’s a human on the other end?</a></div>
+                            <div class="blog-analytic">
+                                <div class="info info-view">
+                                    <i class="fas fa-eye"></i> 941 Views
+                                </div>
+                                <div class="info info-like">
+                                    <a href="#" class="apr-post-like"><i
+                                            class="far fa-heart"></i>&nbsp;27&nbsp;Likes</a>
+                                </div>
                             </div>
                         </div>
                     </div>

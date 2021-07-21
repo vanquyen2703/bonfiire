@@ -1,13 +1,22 @@
-@media all and (max-width: 1200) {
-  .header .container-fluid {
-    padding-left: 100px;
-    padding-right: 100px;
+@media all and (max-width: 1200px) {
+  .header {
+    background-size: cover;
+    background-position: center;
+    .container-fluid {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .content-qc {
+      top: 110px;
+    }
   }
 }
-@media all and (max-width: 1170) {
-
+@media all and (max-width: 1170px) {
+  .banner__around--item {
+    height: auto;
+  }
 }
-@media all and (max-width: 1024) {
+@media all and (max-width: 1024px) {
   .header {
     .content-qc {
       .qc-caption {
@@ -15,15 +24,115 @@
           font-size: 65px;
           letter-spacing: 15px;
           line-height: 70px;
-
         }
       }
     }
   }
 }
-@media all and (max-width: 768) {
+@media all and (max-width: 768 px) {
 }
-@media all and (max-width: 576) {
+@media all and (max-width: 576 px) {
+  .header {
+    background-size: cover;
+    background-position: center;
+    .content-qc {
+      top: 110px;
+      .qc-caption {
+        h2 {
+          font-size: 45px;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+  .blogs {
+    .title-blogs {
+      top: -60px;
+      h2 {
+        font-size: 37px;
+      }
+    }
+    .blogs-all {
+      &__item {
+        &--img {
+        }
+        &--content {
+          .blog-date a {
+          }
+          .blog-title {
+            a {
+            }
+          }
+          .blog-analytic {
+            .info {
+              i {
+              }
+            }
+            .info-like {
+              a {
+              }
+            }
+          }
+        }
+      }
+      :hover img {
+      }
+      :hover .blog-title a {
+      }
+    }
+    .go-to-blog {
+      padding-top: 0;
+      a {
+      }
+    }
+  }
+  .footer {
+    &__top {
+      .logo-ft {
+        width: 100%;
+        text-align: center;
+      }
+      .menu-ft {
+        width: 100%;
+        ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          text-align: center;
+          padding-top: 30px;
+          padding-left: 0;
+          li {
+            a {
+            }
+          }
+        }
+      }
+      .subcribe {
+        margin-top: 40px;
+        text-align: center;
+        width: 100%;
+        a {
+        }
+      }
+    }
+    &__bottom {
+      .copyright {
+        padding: 0 15px;
+        width: 100%;
+        text-align: center;
+        &__content {
+          p {
+            a {
+              :hover {
+              }
+            }
+          }
+        }
+      }
+      .text-right {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }
-@media all and (max-width: 375) {
-}
+
