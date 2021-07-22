@@ -2,8 +2,8 @@
 $('.owl-theme').owlCarousel({
     loop:true,
     margin:30,
-    nav:true,
-    navigation : true,
+    nav:false,
+    navigation :false,
     navText: ["<i class='btnCarousel fa fa-chevron-circle-left' aria-hidden='true'></i>","<i class='btnCarousel fa fa-chevron-circle-right' aria-hidden='true'></i>"],
 
     responsive:{
@@ -14,13 +14,19 @@ $('.owl-theme').owlCarousel({
             items:6
         },
         1024:{
-            items:4
+            items:4,
+            nav:false,
+            dots:false,
         },
         640:{
-            items:2
+            items:2,
+            nav:false,
+            dots:false,
         },
         480:{
-            items:2
+            items:2,
+            nav:false,
+            dots:false,
         },
         0:{
             items:1
