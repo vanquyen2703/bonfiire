@@ -498,8 +498,12 @@ ul li {
   padding: 60px 0px;
 }
 .partner__all .partner__item img {
+  opacity: 30%;
   height: 80px;
   width: 100%;
+}
+.partner__all .partner__item img:hover {
+  opacity: 100%;
 }
 .footer {
   background-color: #333;
