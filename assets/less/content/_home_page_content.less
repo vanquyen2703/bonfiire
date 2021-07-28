@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-
+    width: 100%;
     &--item {
       h3 {
         font-family: CormorantGaramond;
@@ -21,7 +21,8 @@
         margin-bottom: 0;
       }
       p {
-        font-family: FiraSans-Regular;
+        font-family: FiraSans;
+        font-weight: 500;
         font-size: 14px;
         color: #ababab;
         margin: 0;
@@ -62,7 +63,7 @@
           font-size: 18px;
           letter-spacing: 4px;
           margin: 3px -2px 15px 0px;
-          font-family: FiraSans-Bold;
+          font-family: FiraSans;
           font-weight: 400;
           color: @bg-footer;
         }
@@ -82,6 +83,7 @@
           font-family: CormorantGaramond;
           font-weight: 700;
           padding-bottom: 24px;
+          color: #696969;
         }
         a {
           font-size: 14px;
@@ -89,7 +91,8 @@
           line-height: 64px;
           text-transform: uppercase;
           font-weight: 700;
-          font-family: FiraSans-Bold;
+          font-family: FiraSans;
+          color: #696969;
         }
       }
       .content-bn {
@@ -112,7 +115,7 @@
           line-height: 24px;
           margin: 20px 3px;
           color: #696969;
-          font-family: FiraSans-Regular;
+          font-family: FiraSans;
         }
       }
       :hover img {
@@ -149,9 +152,10 @@
 .product {
   padding-bottom: 100px;
   &__title {
-    margin-top: 135px;
+    margin-top: 88px;
     position: relative;
     margin-bottom: 80px;
+    width: 100%;
     h3 {
       margin: 0;
       font-size: 56px;
@@ -167,12 +171,12 @@
       text-decoration: none;
       right: 10px;
       bottom: -25px;
-      font-family: FiraSans-Regular;
+      font-family: FiraSans;
       text-transform: uppercase;
       font-size: 14px;
       letter-spacing: 2px;
       line-height: 24px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       color: @bg-footer;
       font-weight: 600;
       &:hover {
@@ -184,86 +188,111 @@
       }
     }
   }
-  &__all {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .product__all {
-    &--item {
-      margin-bottom: 20px;
-      width: 25%;
-      padding: 0 15px;
-      box-sizing: border-box;
-      .pro-img {
-        position: relative;
-        height: 320px;
-        .add-pro {
-          display: flex;
-          flex-wrap: wrap;
-          position: absolute;
-          width: 100%;
-          bottom: -38px;
-          transition: all 0.6s ease-in-out;
-          opacity: 0;
-          ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-            width: 40%;
-            background: @bg-footer;
-            li {
-              border: 1px solid #ddd;
-              width: 39%;
-              text-align: center;
-              padding-top: 9px;
-              a {
-                color: #fff;
-              }
-            }
-          }
-          .add-to-cart {
-            width: 60%;
-            padding: 10px 0;
-            background-color: @hv-color;
-            text-align: center;
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 15px;
-            font-family: FiraSans-Bold;
-          }
-        }
+  .product__all--item {
+    margin-bottom: 20px;
+    width: 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative;
+    line-height: 0;
+    .pro-img {
+      position: relative;
+
+      .back-to-style {
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 0;
+        color: #212121;
+        opacity: 0;
       }
-      .pro-info {
-        text-align: center;
-        &__name {
-          padding: 15px 0 0;
-          margin: 0;
-          a {
-            font-family: FiraSans-Regular;
-            font-size: 14px;
-            color: @bg-footer;
-            letter-spacing: 1px;
-            line-height: 36px;
-          }
-        }
-        .price {
-          font-family: CormorantGaramond;
-          color: @hv-color;
-          font-size: 18px;
-        }
+      .next-to-style {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        color: #212121;
+        opacity: 0;
       }
     }
-    :hover .add-pro {
+    &:hover .next-to-style {
       opacity: 1;
-      bottom: 0;
+      transition: 0.75s;
+    }
+    &:hover .back-to-style {
+      opacity: 1;
+      transition: 0.75s;
+    }
+    .add-pro {
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      width: 90%;
+      bottom: 40px;
+      transition: all 0.6s ease-in-out;
+      opacity: 0;
+      ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        background: @bg-footer;
+        li {
+          border: 1px solid #ddd;
+          width: 39%;
+          text-align: center;
+          padding-top: 12px;
+          a {
+            color: #fff;
+          }
+        }
+      }
+      .add-to-cart {
+        width: 60%;
+        padding: 10px 0;
+        background-color: @hv-color;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 20px;
+        font-family: FiraSans;
+        font-weight: 600;
+      }
+    }
+    .pro-info {
+      text-align: center;
+      &__name {
+        padding: 15px 0 0;
+        margin: 0;
+        a {
+          font-family: FiraSans;
+          font-weight: 600;
+          font-size: 14px;
+          color: @bg-footer;
+          letter-spacing: 1px;
+          line-height: 36px;
+        }
+      }
+      .price {
+        font-family: CormorantGaramond;
+        color: @hv-color;
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 20px;
+      }
+    }
+    &:hover .add-pro {
+      opacity: 1;
+      bottom: 90px;
       transition: 0.75s;
     }
   }
 }
+
 .blogs {
   background: @bg-section;
-  padding: 110px 0 80px 0;
+  padding: 110px 0 100px 0;
   position: relative;
   .title-blogs {
     position: absolute;
@@ -305,19 +334,22 @@
         }
         .blog-analytic {
           border-top: 1px solid #eeeeee;
-          padding-top: 12px;
+          padding-top: 7px;
           .info {
             display: inline-block;
             line-height: 32px;
+            font-size: 14px;
             color: @ct-color;
             padding-right: 23px;
-            i {
+            font-family: FiraSans;
+            ion-icon {
               color: #92c5d9;
             }
           }
           .info-like {
             a {
               color: @ct-color;
+              font-family: FiraSans;
             }
           }
         }
@@ -347,7 +379,7 @@
 }
 .partner {
   &__all {
-    padding: 80px 0px;
+    padding: 76px 0px;
     .partner__item {
       img {
         opacity: 30%;
