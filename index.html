@@ -10,6 +10,7 @@
     <!-- <link rel="stylesheet/less" href="assets/less/style.less"> -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- js -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/less.js"></script>
@@ -17,10 +18,11 @@
     <script src="assets/js/owl.carousel.min.js"></script>
 
     <title>Bonfire</title>
-
+    
 </head>
 
 <body>
+    <div class="cover"></div>
     <div class="header">
         <!-- <img src="assets/images/bg.png" alt="" class="img-fluid img-bg-head"> -->
         <div class="header__top">
@@ -30,9 +32,11 @@
                         <img src="assets/images/bonfire.png" alt="bonfire" class="img-fluid">
                     </div>
                     <div class="head-right">
-                        <div class="cart"><a href=""><i class="fas fa-shopping-cart"></i></a></div>
+                        <div class="cart"><a href="">
+                                <ion-icon name="cart-outline"></ion-icon><span class="number-pro">2</span></span>
+                            </a></div>
                         <div class="navbar">
-                            <i class="fas fa-bars"></i>
+                            <ion-icon name="menu-outline"></ion-icon>
                         </div>
                         <div class="nav-overlay">
                             <ul class="header-overlay">
@@ -117,7 +121,16 @@
                     <a href=""><img src="assets/images/banner-1.png" alt="" class="img-fluid"></a>
                 </div>
                 <div class="banner__around--item">
-                    <a href=""> <img src="assets/images/banner-2.png" alt="" class="img-fluid"></a>
+                    
+                        <div class="wrap-img">
+                           <a href=""> <img src="assets/images/img.png" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="collap-sale">
+                            <p class="s1">sale up to</p>
+                            <p class="s2">70%</p>
+                            <h3>Select Gold Clearance </h3>
+                            <a href="#">Shop now</a>
+                        </div>
                 </div>
                 <div class="banner__around--item">
                     <a href=""><img src="assets/images/banner-3.png" alt="" class="img-fluid"></a>
@@ -131,7 +144,11 @@
                     <a href=""><img src="assets/images/banner-5.png" alt="" class="img-fluid"></a>
                 </div>
                 <div class="banner__around--item">
-                    <a href=""><img src="assets/images/banner-6.png" alt="" class="img-fluid"></a>
+                    <a href=""><img src="assets/images/6.png" alt="" class="img-fluid"></a>
+                    <div class="content-bn">
+                        <h3>Princess Ring Rose Gold </h3>
+                        <p>Rose gold plated over brass  * One size</p>
+                    </div>
                 </div>
             </div>
 
@@ -143,144 +160,157 @@
                 <h3><a href="">Featured items</a></h3>
                 <a href="" class="view-more">View more<i class="fas fa-chevron-circle-right"></i></a>
             </div>
-            <div class="product__all">
-                <div class="product__all--item">
-                    <div class="pro-img">
-                        <img src="assets/images/pr1.png" alt="" class="img-fluid">
+            <div class="row">
+
+                <div class="product__all">
+                    <div class="product__all--item">
+                        <div class="pro-img">
+                            <img src="assets/images/pr1.png" alt="" class="img-fluid">
+                            <img src="assets/images/pr1.png" alt="" class="img-fluid">
+                             
+                        </div>
                         <div class="add-pro">
-                            <a href="" class="add-to-cart">Add to cart</a>
-                            <ul>
-                                <li><a href=""><i class="far fa-heart"></i></a></li>
-                                <li><a href=""><i class="fas fa-signal"></i></a></li>
-                                <li><a href=""><i class="fas fa-search"></i></a></li>
-                            </ul>
+                                <a href="" class="add-to-cart">Add to cart</a>
+                                <ul>
+                                    <li><a href=""><i class="far fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fas fa-signal"></i></a></li>
+                                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        <div class="pro-info">
+                            <h3 class="pro-info__name"><a href="">Kubusbowl Small</a></h3>
+                            <div class="price"><span>$19.00</span></div>
                         </div>
                     </div>
-                    <div class="pro-info">
-                        <h3 class="pro-info__name"><a href="">Kubusbowl Small</a></h3>
-                        <div class="price"><span>$19.00</span></div>
-                    </div>
-                </div>
-                <div class="product__all--item">
-                    <div class="pro-img">
-                        <img src="assets/images/pr2.png" alt="" class="img-fluid">
-                        <div class="add-pro">
-                            <a href="" class="add-to-cart">Add to cart</a>
-                            <ul>
-                                <li><a href=""><i class="far fa-heart"></i></a></li>
-                                <li><a href=""><i class="fas fa-signal"></i></a></li>
-                                <li><a href=""><i class="fas fa-search"></i></a></li>
-                            </ul>
+                    <div class="product__all--item">
+                        <div class="pro-img">
+                            <img src="assets/images/pr2.png" alt="" class="img-fluid">
+                            <img src="assets/images/pr2.png" alt="" class="img-fluid">
+                            
+                        </div>
+                        
+                        <div class="pro-info">
+                            <h3 class="pro-info__name"><a href="">Divine Footstool</a></h3>
+                            <div class="price"><span>$179.00</span></div>
                         </div>
                     </div>
-                    <div class="pro-info">
-                        <h3 class="pro-info__name"><a href="">Divine Footstool</a></h3>
-                        <div class="price"><span>$179.00</span></div>
-                    </div>
-                </div>
-                <div class="product__all--item">
-                    <div class="pro-img">
-                        <img src="assets/images/pr3.png" alt="" class="img-fluid">
+                    <div class="product__all--item">
+                        <div class="pro-img">
+                            <img src="assets/images/pr3.png" alt="" class="img-fluid">
+                            <img src="assets/images/pr3.png" alt="" class="img-fluid">
+                            
+                        </div>
                         <div class="add-pro">
-                            <a href="" class="add-to-cart">Add to cart</a>
-                            <ul>
-                                <li><a href=""><i class="far fa-heart"></i></a></li>
-                                <li><a href=""><i class="fas fa-signal"></i></a></li>
-                                <li><a href=""><i class="fas fa-search"></i></a></li>
-                            </ul>
+                                <a href="" class="add-to-cart">Add to cart</a>
+                                <ul>
+                                    <li><a href=""><i class="far fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fas fa-signal"></i></a></li>
+                                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        <div class="pro-info">
+                            <h3 class="pro-info__name"><a href="">Cache Pendant Lamp</a></h3>
+                            <div class="price"><span>$179.00</span></div>
                         </div>
                     </div>
-                    <div class="pro-info">
-                        <h3 class="pro-info__name"><a href="">Cache Pendant Lamp</a></h3>
-                        <div class="price"><span>$179.00</span></div>
-                    </div>
-                </div>
-                <div class="product__all--item">
-                    <div class="pro-img">
-                        <img src="assets/images/pr4.png" alt="" class="img-fluid">
-                        <div class="add-pro">
-                            <a href="" class="add-to-cart">Add to cart</a>
-                            <ul>
-                                <li><a href=""><i class="far fa-heart"></i></a></li>
-                                <li><a href=""><i class="fas fa-signal"></i></a></li>
-                                <li><a href=""><i class="fas fa-search"></i></a></li>
-                            </ul>
+                    <div class="product__all--item">
+                        <div class="pro-img">
+                            <img src="assets/images/pr4.png" alt="" class="img-fluid">
+                            <img src="assets/images/pr4.png" alt="" class="img-fluid">
+                           
+                        </div>
+                         <div class="add-pro">
+                                <a href="" class="add-to-cart">Add to cart</a>
+                                <ul>
+                                    <li><a href=""><i class="far fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fas fa-signal"></i></a></li>
+                                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        <div class="pro-info">
+                            <h3 class="pro-info__name"><a href="">RIO Chair</a></h3>
+                            <div class="price"><span>$179.00</span></div>
                         </div>
                     </div>
-                    <div class="pro-info">
-                        <h3 class="pro-info__name"><a href="">RIO Chair</a></h3>
-                        <div class="price"><span>$179.00</span></div>
-                    </div>
-                </div>
-                <div class="product__all--item">
-                    <div class="pro-img">
-                        <img src="assets/images/pr5.png" alt="" class="img-fluid">
+                    <div class="product__all--item">
+                        <div class="pro-img">
+                            <img src="assets/images/pr5.png" alt="" class="img-fluid">
+                            <img src="assets/images/pr5.png" alt="" class="img-fluid">
+                            
+                        </div>
                         <div class="add-pro">
-                            <a href="" class="add-to-cart">Add to cart</a>
-                            <ul>
-                                <li><a href=""><i class="far fa-heart"></i></a></li>
-                                <li><a href=""><i class="fas fa-signal"></i></a></li>
-                                <li><a href=""><i class="fas fa-search"></i></a></li>
-                            </ul>
+                                <a href="" class="add-to-cart">Add to cart</a>
+                                <ul>
+                                    <li><a href=""><i class="far fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fas fa-signal"></i></a></li>
+                                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        <div class="pro-info">
+                            <h3 class="pro-info__name"><a href="">Cache Pendant Lamp</a></h3>
+                            <div class="price"><span>$179.00</span></div>
                         </div>
                     </div>
-                    <div class="pro-info">
-                        <h3 class="pro-info__name"><a href="">Cache Pendant Lamp</a></h3>
-                        <div class="price"><span>$179.00</span></div>
-                    </div>
-                </div>
-                <div class="product__all--item">
-                    <div class="pro-img">
-                        <img src="assets/images/pr6.png" alt="" class="img-fluid">
+                    <div class="product__all--item">
+                        <div class="pro-img">
+                            <img src="assets/images/pr6.png" alt="" class="img-fluid">
+                            <img src="assets/images/pr6.png" alt="" class="img-fluid">
+                            
+                        </div>
                         <div class="add-pro">
-                            <a href="" class="add-to-cart">Add to cart</a>
-                            <ul>
-                                <li><a href=""><i class="far fa-heart"></i></a></li>
-                                <li><a href=""><i class="fas fa-signal"></i></a></li>
-                                <li><a href=""><i class="fas fa-search"></i></a></li>
-                            </ul>
+                                <a href="" class="add-to-cart">Add to cart</a>
+                                <ul>
+                                    <li><a href=""><i class="far fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fas fa-signal"></i></a></li>
+                                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        <div class="pro-info">
+                            <h3 class="pro-info__name"><a href="">Prismatic table</a></h3>
+                            <div class="price"><span>$179.00</span></div>
                         </div>
                     </div>
-                    <div class="pro-info">
-                        <h3 class="pro-info__name"><a href="">Prismatic table</a></h3>
-                        <div class="price"><span>$179.00</span></div>
-                    </div>
-                </div>
-                <div class="product__all--item">
-                    <div class="pro-img">
-                        <img src="assets/images/pr7.png" alt="" class="img-fluid">
+                    <div class="product__all--item">
+                        <div class="pro-img">
+                            <img src="assets/images/pr7.png" alt="" class="img-fluid">
+                            <img src="assets/images/pr7.png" alt="" class="img-fluid">
+                            
+                        </div>
                         <div class="add-pro">
-                            <a href="" class="add-to-cart">Add to cart</a>
-                            <ul>
-                                <li><a href=""><i class="far fa-heart"></i></a></li>
-                                <li><a href=""><i class="fas fa-signal"></i></a></li>
-                                <li><a href=""><i class="fas fa-search"></i></a></li>
-                            </ul>
+                                <a href="" class="add-to-cart">Add to cart</a>
+                                <ul>
+                                    <li><a href=""><i class="far fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fas fa-signal"></i></a></li>
+                                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        <div class="pro-info">
+                            <h3 class="pro-info__name"><a href="">CobraT hermo Cup</a></h3>
+                            <div class="price"><span>$179.00</span></div>
                         </div>
                     </div>
-                    <div class="pro-info">
-                        <h3 class="pro-info__name"><a href="">CobraT hermo Cup</a></h3>
-                        <div class="price"><span>$179.00</span></div>
-                    </div>
-                </div>
-                <div class="product__all--item">
-                    <div class="pro-img">
-                        <img src="assets/images/pr8.png" alt="" class="img-fluid">
-                        <div class="add-pro">
-                            <a href="" class="add-to-cart">Add to cart</a>
-                            <ul>
-                                <li><a href=""><i class="far fa-heart"></i></a></li>
-                                <li><a href=""><i class="fas fa-signal"></i></a></li>
-                                <li><a href=""><i class="fas fa-search"></i></a></li>
-                            </ul>
+                    <div class="product__all--item">
+                        <div class="pro-img">
+                            <img src="assets/images/pr8.png" alt="" class="img-fluid">
+                            <img src="assets/images/pr8.png" alt="" class="img-fluid">
+                            
                         </div>
-                    </div>
-                    <div class="pro-info">
-                        <h3 class="pro-info__name"><a href="">Montana Collection</a></h3>
-                        <div class="price"><span>$179.00</span></div>
+                        <div class="add-pro">
+                                <a href="" class="add-to-cart">Add to cart</a>
+                                <ul>
+                                    <li><a href=""><i class="far fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fas fa-signal"></i></a></li>
+                                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        <div class="pro-info">
+                            <h3 class="pro-info__name"><a href="">Montana Collection</a></h3>
+                            <div class="price"><span>$179.00</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
+
 
         </div>
     </section>
@@ -357,16 +387,16 @@
             <div class="partner__all">
                 <div class="owl-carousel owl-theme">
                     <div class="partner__item item">
-                        <img src="assets/images/logo-jubilee.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="partner__item item">
-                        <img src="assets/images/download.png" alt="" class="img-fluid">
+                        <img src="assets/images/Rolex_Logo.png" alt="" class="img-fluid">
                     </div>
                     <div class="partner__item item">
                         <img src="assets/images/elle-logo.png" alt="" class="img-fluid">
                     </div>
                     <div class="partner__item item">
-                        <img src="assets/images/Rolex_Logo.png" alt="" class="img-fluid">
+                        <img src="assets/images/download.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="partner__item item">
+                        <img src="assets/images/logo-jubilee.png" alt="" class="img-fluid">
                     </div>
                     <div class="partner__item item">
                         <img src="assets/images/TritonLogo_URL-AllBlack.png" alt="" class="img-fluid">
@@ -409,12 +439,20 @@
                     <div class="text-right">
                         <div class="footer-social ">
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a>
+                                <li><a href="#">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a></li>
+                                <li><a href="#">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
                                 </li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#">
+                                        <ion-icon name="logo-youtube"></ion-icon>
+                                    </a></li>
 
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                <li><a href="#">
+                                        <ion-icon name="logo-skype"></ion-icon>
+                                    </a></li>
                             </ul>
                         </div>
                     </div>
@@ -424,8 +462,23 @@
         </div>
 
     </footer>
+   
     <script src="assets/js/customerz.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https: // unkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js "></script>
 
+	<script type="text/javascript">
+		$('.pro-img').slick({
+			arrows: true,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			adaptiveHeight: true
+		});
+	</script>
 </body>
 
 </html>

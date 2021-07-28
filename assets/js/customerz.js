@@ -1,3 +1,5 @@
+
+
 //Owl carousel
 $('.owl-theme').owlCarousel({
     loop:true,
@@ -68,7 +70,21 @@ jQuery(document).ready(function($) {
 		$('.nav-overlay').css('display','block');
 	});
 	$('.menu-close').click( function () {
+        $('.cover').removeClass('active');
 		$('.nav-overlay').animate({right: '-300px'}, 200);
         $('.nav-overlay').css('display','none');
+        
 	});
+});
+
+jQuery(document).ready(function($){
+    $('.navbar').click( function() {
+        $('.cover').addClass('active');
+    });
+    $('.cover').click( function() {
+        $('.cover').removeClass('active');
+        $('.nav-overlay').animate({right: '-300px'}, 200);
+        $('.nav-overlay').css('display','none');
+    });
+
 });
