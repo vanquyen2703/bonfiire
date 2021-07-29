@@ -42,14 +42,22 @@
   }
   &__around {
     width: 100%;
-    display: grid;
-    grid-template-columns: 24% 49% 24%;
-    grid-gap: 20px;
+    display: flex;
     margin-bottom: 20px;
+    .bn1 {
+      width: 25%;
+    }
+    .bn2 {
+      width: 50%;
+    }
+    .bn3 {
+      width: 25%;
+    }
     &--item {
       overflow: hidden;
-      height: 410px;
       position: relative;
+      padding: 0 15px;
+      box-sizing: border-box;
       .wrap-img {
       }
       .collap-sale {
@@ -97,7 +105,8 @@
       }
       .content-bn {
         position: absolute;
-        top: 138px;
+        top: 50%;
+        transform: translateY(-50%);
         left: 47px;
         width: 260px;
         h3 {
@@ -124,19 +133,23 @@
       }
       img {
         width: 100%;
-        height: 410px;
       }
     }
   }
   &__around2 {
     width: 100%;
-    display: grid;
-    grid-template-columns: 24% 49% 24%;
-    grid-gap: 20px;
-
+    display: flex;
+    .bn4 {
+      width: 25%;
+    }
+    .bn6 {
+      width: 50%;
+    }
+    .bn5 {
+      width: 25%;
+    }
     &--item {
       overflow: hidden;
-      height: 410px;
       :hover img {
         transform: scale(1.1);
         transition: 1s;
@@ -193,73 +206,74 @@
     width: 25%;
     padding: 0 15px;
     box-sizing: border-box;
-    position: relative;
     line-height: 0;
-    .pro-img {
+    .img-info {
       position: relative;
-
-      .back-to-style {
-        position: absolute;
-        z-index: 999;
-        top: 50%;
-        left: 0;
-        color: #212121;
-        opacity: 0;
-      }
-      .next-to-style {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        color: #212121;
-        opacity: 0;
-      }
-    }
-    &:hover .next-to-style {
-      opacity: 1;
-      transition: 0.75s;
-    }
-    &:hover .back-to-style {
-      opacity: 1;
-      transition: 0.75s;
-    }
-    .add-pro {
-      display: flex;
-      flex-wrap: wrap;
-      position: absolute;
-      width: 90%;
-      bottom: 40px;
-      transition: all 0.6s ease-in-out;
-      opacity: 0;
-      ul {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-        width: 40%;
-        background: @bg-footer;
-        li {
-          border: 1px solid #ddd;
-          width: 39%;
-          text-align: center;
-          padding-top: 12px;
-          a {
-            color: #fff;
-          }
+      .pro-img {
+        .back-to-style {
+          position: absolute;
+          z-index: 999;
+          top: 50%;
+          left: 0;
+          color: #212121;
+          opacity: 0;
+        }
+        .next-to-style {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          color: #212121;
+          opacity: 0;
         }
       }
-      .add-to-cart {
-        width: 60%;
-        padding: 10px 0;
-        background-color: @hv-color;
-        text-align: center;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 15px;
-        line-height: 20px;
-        font-family: FiraSans;
-        font-weight: 600;
+      &:hover .next-to-style {
+        opacity: 1;
+        transition: 0.75s;
+      }
+      &:hover .back-to-style {
+        opacity: 1;
+        transition: 0.75s;
+      }
+      .add-pro {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 100%;
+        bottom: -40px;
+        transition: all 0.6s ease-in-out;
+        opacity: 0;
+        ul {
+          list-style: none;
+          display: flex;
+          margin: 0;
+          padding: 0;
+          width: 40%;
+          background: @bg-footer;
+          li {
+            border: 1px solid #ddd;
+            width: 39%;
+            text-align: center;
+            padding-top: 12px;
+            a {
+              color: #fff;
+            }
+          }
+        }
+        .add-to-cart {
+          width: 60%;
+          padding: 10px 0;
+          background-color: @hv-color;
+          text-align: center;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 15px;
+          line-height: 20px;
+          font-family: FiraSans;
+          font-weight: 600;
+        }
       }
     }
+
     .pro-info {
       text-align: center;
       &__name {
@@ -286,7 +300,7 @@
     }
     &:hover .add-pro {
       opacity: 1;
-      bottom: 90px;
+      bottom: 0;
       transition: 0.75s;
     }
   }
