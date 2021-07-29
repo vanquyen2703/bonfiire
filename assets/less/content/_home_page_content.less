@@ -152,6 +152,7 @@
 .product {
   padding-bottom: 100px;
   &__title {
+    padding: 0 15px;
     margin-top: 88px;
     position: relative;
     margin-bottom: 80px;
@@ -169,7 +170,7 @@
     .view-more {
       position: absolute;
       text-decoration: none;
-      right: 10px;
+      right: 25px;
       bottom: -25px;
       font-family: FiraSans;
       text-transform: uppercase;
@@ -189,7 +190,6 @@
     }
   }
   .product__all--item {
-    margin-bottom: 20px;
     width: 25%;
     padding: 0 15px;
     box-sizing: border-box;
@@ -263,8 +263,10 @@
     .pro-info {
       text-align: center;
       &__name {
-        padding: 15px 0 0;
+        padding: 10px 0 0;
         margin: 0;
+        line-height: 36px;
+        font-size: 14px;
         a {
           font-family: FiraSans;
           font-weight: 600;
@@ -279,7 +281,7 @@
         color: @hv-color;
         font-size: 18px;
         line-height: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
       }
     }
     &:hover .add-pro {
@@ -311,18 +313,18 @@
         overflow: hidden;
       }
       &--content {
-        padding: 24px 40px 13px 35px;
+        padding: 24px 41px 13px 34px;
         background: #fff;
         .blog-date a {
           text-transform: uppercase;
           color: #cccccc;
           font-size: 14px;
+          font-family: FiraSans;
           letter-spacing: 1px;
           line-height: 24px;
         }
         .blog-title {
-          padding: 24px 0 50px;
-          line-height: 32px;
+          padding: 18px 0 50px;
           a {
             font-family: CormorantGaramond;
             font-weight: 700;
@@ -334,7 +336,7 @@
         }
         .blog-analytic {
           border-top: 1px solid #eeeeee;
-          padding-top: 7px;
+          padding-top: 12px;
           .info {
             display: inline-block;
             line-height: 32px;
@@ -344,6 +346,13 @@
             font-family: FiraSans;
             ion-icon {
               color: #92c5d9;
+              padding-right: 6px;
+            }
+            a {
+              ion-icon {
+                color: #92c5d9;
+                padding-right: 5px;
+              }
             }
           }
           .info-like {
@@ -370,7 +379,7 @@
       font-size: 24px;
       line-height: 28px;
       color: #3f3f3f;
-      padding: 0 15px;
+      padding: 0 22px;
       font-family: CormorantGaramond;
       font-weight: 400;
       background: -webkit-linear-gradient(top, transparent 50%, #ffffff 50%);

@@ -58,7 +58,7 @@ ul li {
   box-sizing: border-box;
 }
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -233,6 +233,7 @@ ul li {
 }
 .header .content-qc .qc-caption {
   width: 70%;
+  padding-left: 15px;
 }
 .header .content-qc .qc-caption p {
   font-size: 24px;
@@ -418,6 +419,7 @@ ul li {
   padding-bottom: 100px;
 }
 .product__title {
+  padding: 0 15px;
   margin-top: 88px;
   position: relative;
   margin-bottom: 80px;
@@ -436,7 +438,7 @@ ul li {
 .product__title .view-more {
   position: absolute;
   text-decoration: none;
-  right: 10px;
+  right: 25px;
   bottom: -25px;
   font-family: FiraSans;
   text-transform: uppercase;
@@ -455,7 +457,6 @@ ul li {
   color: #d6ba8d;
 }
 .product .product__all--item {
-  margin-bottom: 20px;
   width: 25%;
   padding: 0 15px;
   box-sizing: border-box;
@@ -530,8 +531,10 @@ ul li {
   text-align: center;
 }
 .product .product__all--item .pro-info__name {
-  padding: 15px 0 0;
+  padding: 10px 0 0;
   margin: 0;
+  line-height: 36px;
+  font-size: 14px;
 }
 .product .product__all--item .pro-info__name a {
   font-family: FiraSans;
@@ -546,7 +549,7 @@ ul li {
   color: #d6ba8d;
   font-size: 18px;
   line-height: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .product .product__all--item:hover .add-pro {
   opacity: 1;
@@ -573,19 +576,19 @@ ul li {
   overflow: hidden;
 }
 .blogs .blogs-all__item--content {
-  padding: 24px 40px 13px 35px;
+  padding: 24px 41px 13px 34px;
   background: #fff;
 }
 .blogs .blogs-all__item--content .blog-date a {
   text-transform: uppercase;
   color: #cccccc;
   font-size: 14px;
+  font-family: FiraSans;
   letter-spacing: 1px;
   line-height: 24px;
 }
 .blogs .blogs-all__item--content .blog-title {
-  padding: 24px 0 50px;
-  line-height: 32px;
+  padding: 18px 0 50px;
 }
 .blogs .blogs-all__item--content .blog-title a {
   font-family: CormorantGaramond;
@@ -597,7 +600,7 @@ ul li {
 }
 .blogs .blogs-all__item--content .blog-analytic {
   border-top: 1px solid #eeeeee;
-  padding-top: 7px;
+  padding-top: 12px;
 }
 .blogs .blogs-all__item--content .blog-analytic .info {
   display: inline-block;
@@ -609,6 +612,11 @@ ul li {
 }
 .blogs .blogs-all__item--content .blog-analytic .info ion-icon {
   color: #92c5d9;
+  padding-right: 6px;
+}
+.blogs .blogs-all__item--content .blog-analytic .info a ion-icon {
+  color: #92c5d9;
+  padding-right: 5px;
 }
 .blogs .blogs-all__item--content .blog-analytic .info-like a {
   color: #8f8f8f;
@@ -629,7 +637,7 @@ ul li {
   font-size: 24px;
   line-height: 28px;
   color: #3f3f3f;
-  padding: 0 15px;
+  padding: 0 22px;
   font-family: CormorantGaramond;
   font-weight: 400;
   background: -webkit-linear-gradient(top, transparent 50%, #ffffff 50%);
@@ -650,7 +658,7 @@ ul li {
   background-color: #333;
 }
 .footer__top {
-  padding: 70px 0;
+  padding: 67px 15px;
 }
 .footer__top .logo-ft {
   width: 15%;
@@ -664,7 +672,7 @@ ul li {
 }
 .footer__top .menu-ft ul li {
   float: left;
-  padding: 0 14px;
+  padding: 0 18px;
 }
 .footer__top .menu-ft ul li a {
   font-weight: 600;
@@ -673,6 +681,7 @@ ul li {
   color: #ababab;
   letter-spacing: 1px;
   line-height: 24px;
+  font-family: FiraSans;
 }
 .footer__top .menu-ft ul li a:hover {
   color: #d6ba8d;
@@ -691,9 +700,9 @@ ul li {
   border: 1px 1px 2px 1px;
   border: solid;
   border-bottom: 2px solid;
-  padding: 9px 23px;
+  padding: 9px 20px;
   font-size: 14px;
-  font-family: FiraSans-Regular;
+  font-family: FiraSans;
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 24px;
@@ -701,10 +710,20 @@ ul li {
 .footer__top .subcribe a:hover {
   color: #d6ba8d;
 }
+.footer__top .subcribe a ion-icon {
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #d6ba8d;
+  vertical-align: sub;
+  line-height: 24px;
+  padding: 0 2px;
+}
 .footer__bottom {
   border-top: 1px solid rgba(36, 36, 36, 0.5);
-  padding-top: 41px;
+  padding-top: 40px;
+  padding-left: 15px;
   padding-bottom: 41px;
+  padding-right: 15px;
 }
 .footer__bottom .copyright {
   width: 50%;
@@ -714,9 +733,11 @@ ul li {
   line-height: 28px;
   font-size: 14px;
   margin: 0;
+  font-family: FiraSans;
 }
 .footer__bottom .copyright__content p a {
   color: #ababab;
+  font-family: FiraSans;
 }
 .footer__bottom .copyright__content p a :hover {
   color: #d6ba8d;
@@ -737,7 +758,7 @@ ul li {
   border-radius: 50%;
   font-size: 18px;
   padding-top: 11px;
-  margin: -13px 0 0 5px;
+  margin: -7px 0 0 5px;
   color: #ababab;
 }
 .footer__bottom .text-right .footer-social li :hover {
@@ -782,10 +803,17 @@ ul li {
     height: 520px;
   }
   .product {
-    padding-bottom: 80px;
+    padding-bottom: 90px;
   }
 }
 @media all and (max-width: 1540px) {
+  .container-fluid {
+    max-width: 1360px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
   .header {
     background-position: center;
   }

@@ -1,7 +1,7 @@
 .footer {
   background-color: @bg-footer;
   &__top {
-    padding: 70px 0;
+    padding: 67px 15px;
     .logo-ft {
       width: 15%;
     }
@@ -12,7 +12,7 @@
         padding-left: 130px;
         li {
           float: left;
-          padding: 0 14px;
+          padding: 0 18px;
           // :nth-child(1) {
           //   color: @hv-color;
           // }
@@ -23,6 +23,7 @@
             color: #ababab;
             letter-spacing: 1px;
             line-height: 24px;
+            font-family: FiraSans;
             &:hover {
               color: @hv-color;
             }
@@ -43,22 +44,32 @@
         border: 1px 1px 2px 1px;
         border: solid;
         border-bottom: 2px solid;
-        padding: 9px 23px;
+        padding: 9px 20px;
         font-size: 14px;
-        font-family: FiraSans-Regular;
+        font-family: FiraSans;
         font-weight: 600;
         letter-spacing: 2px;
         line-height: 24px;
         &:hover {
           color: @hv-color;
         }
+        ion-icon {
+          font-size: 18px;
+          letter-spacing: 3px;
+          color: #d6ba8d;
+          vertical-align: sub;
+          line-height: 24px;
+          padding: 0 2px;
+        }
       }
     }
   }
   &__bottom {
     border-top: 1px solid rgba(36, 36, 36, 0.5);
-    padding-top: 41px;
+    padding-top: 40px;
+    padding-left: 15px;
     padding-bottom: 41px;
+    padding-right: 15px;
     .copyright {
       width: 50%;
       color: @ft-color;
@@ -67,8 +78,10 @@
           line-height: 28px;
           font-size: 14px;
           margin: 0;
+          font-family: FiraSans;
           a {
             color: @ft-color;
+            font-family: FiraSans;
             :hover {
               color: @hv-color;
             }
@@ -90,7 +103,7 @@
           border-radius: 50%;
           font-size: 18px;
           padding-top: 11px;
-          margin: -13px 0 0 5px;
+          margin: -7px 0 0 5px;
           color: #ababab;
         }
         :hover {
