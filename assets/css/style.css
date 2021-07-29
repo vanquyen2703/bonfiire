@@ -643,12 +643,10 @@ ul li {
   background: -webkit-linear-gradient(top, transparent 50%, #ffffff 50%);
 }
 .partner__all {
-  padding: 76px 0px;
+  padding: 33px 0px 19px;
 }
 .partner__all .partner__item img {
   opacity: 30%;
-  height: 50px;
-  width: 85% !important;
   margin: 0 auto;
 }
 .partner__all .partner__item img:hover {
