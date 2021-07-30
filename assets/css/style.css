@@ -1422,14 +1422,16 @@ ul li {
     display: block;
   }
   .footer__bottom .copyright {
+    order: 2;
     padding: 0 15px;
     width: 100%;
     text-align: center;
   }
   .footer__bottom .text-right {
+    order: 1;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .footer__bottom .text-right .footer-social li a {
     margin: -13px 20px 0 5px;
