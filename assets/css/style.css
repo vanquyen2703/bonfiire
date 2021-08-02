@@ -385,7 +385,7 @@ ul li {
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
-  margin-right: 50px;
+  margin-right: calc(100% * 50/1720);
 }
 .banner__around--item .wrap-img {
   overflow: hidden;
@@ -509,7 +509,7 @@ ul li {
 }
 .banner__around2--item {
   overflow: hidden;
-  margin-right: 50px;
+  margin-right: calc(100% * 50/1720);
 }
 .banner__around2--item :hover img {
   transform: scale(1.1);
