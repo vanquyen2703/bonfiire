@@ -1105,12 +1105,10 @@ ul li {
     text-align: center;
   }
   .footer__bottom .copyright {
-    padding-left: 15px;
-    width: 48%;
+    width: 50%;
   }
   .footer__bottom .text-right {
-    width: 48%;
-    padding-right: 15px;
+    width: 50%;
   }
 }
 @media all and (max-width: 768px) {
@@ -1248,12 +1246,10 @@ ul li {
     text-align: center;
   }
   .footer__bottom .copyright {
-    padding-left: 15px;
-    width: 48%;
+    width: 50%;
   }
   .footer__bottom .text-right {
-    width: 46%;
-    padding-right: 15px;
+    width: 50%;
   }
 }
 @media all and (max-width: 576px) {
