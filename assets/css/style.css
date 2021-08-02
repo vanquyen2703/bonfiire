@@ -321,7 +321,7 @@ ul li {
 }
 .banner__around .bn1 .bn-pro-info {
   position: absolute;
-  bottom: 6%;
+  bottom: 7%;
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
@@ -356,7 +356,7 @@ ul li {
 }
 .banner__around .bn3 .bn-ct {
   position: absolute;
-  bottom: 16%;
+  bottom: 17%;
   left: 9%;
   width: 100%;
   padding: 0 15px;
@@ -371,7 +371,7 @@ ul li {
   font-family: FiraSans;
   margin: 0;
   text-transform: uppercase;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
 }
 .banner__around .bn3 .bn-ct h3 {
   font-size: 72px;
@@ -385,7 +385,7 @@ ul li {
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
-  margin-right: calc(100% * 50/1720);
+  margin-right: calc(100% * 50 / 1720);
 }
 .banner__around--item .wrap-img {
   overflow: hidden;
@@ -435,9 +435,9 @@ ul li {
 }
 .banner__around--item .content-bn {
   position: absolute;
-  top: 45%;
+  top: 44%;
   transform: translateY(-50%);
-  left: 55px;
+  left: 48px;
   width: 260px;
 }
 .banner__around--item .content-bn h3 {
@@ -467,7 +467,7 @@ ul li {
 .banner__around2 {
   width: 100%;
   display: flex;
-  margin: 0 0 40px 0;
+  margin: 0 0 34px 0;
 }
 .banner__around2 .bn4 {
   width: calc(100% * 395 / 1720);
@@ -481,9 +481,9 @@ ul li {
 }
 .banner__around2 .bn5 .bn-pro-info {
   position: absolute;
-  bottom: 7%;
+  bottom: 8%;
   text-align: center;
-  left: 50%;
+  left: 49%;
   transform: translateX(-50%);
   width: 100%;
   padding: 0 25px;
@@ -509,7 +509,7 @@ ul li {
 }
 .banner__around2--item {
   overflow: hidden;
-  margin-right: calc(100% * 50/1720);
+  margin-right: calc(100% * 50 / 1720);
 }
 .banner__around2--item :hover img {
   transform: scale(1.1);
