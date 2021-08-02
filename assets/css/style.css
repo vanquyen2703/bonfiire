@@ -314,19 +314,19 @@ ul li {
 .banner__around {
   width: 100%;
   display: flex;
-  margin: 0 -15px 30px -15px;
+  margin-bottom: 50px;
 }
 .banner__around .bn1 {
   width: 25%;
 }
 .banner__around .bn1 .bn-pro-info {
   position: absolute;
-  bottom: 10%;
+  bottom: 3%;
   text-align: center;
-  left: 50%;
+  left: 49%;
   transform: translateX(-50%);
   width: 100%;
-  padding: 0 15px;
+  padding: 0 25px;
   box-sizing: border-box;
 }
 .banner__around .bn1 .bn-pro-info .bn-pro-info__name {
@@ -345,6 +345,7 @@ ul li {
   color: #d6ba8d;
   font-weight: 700;
   font-family: CormorantGaramond;
+  margin-top: 15px;
 }
 .banner__around .bn2 {
   width: 50%;
@@ -381,7 +382,7 @@ ul li {
 }
 .banner__around--item {
   overflow: hidden;
-  padding: 0 15px;
+  padding: 0 25px;
   box-sizing: border-box;
   position: relative;
 }
@@ -390,10 +391,10 @@ ul li {
 }
 .banner__around--item .collap-sale {
   position: absolute;
-  top: 10%;
+  top: 17%;
   right: 40px;
   text-align: center;
-  padding: 35px 30px 0;
+  padding: 37px 26px 0;
   border: 4px solid #fff;
 }
 .banner__around--item .collap-sale .s1 {
@@ -433,9 +434,9 @@ ul li {
 }
 .banner__around--item .content-bn {
   position: absolute;
-  top: 50%;
+  top: 49%;
   transform: translateY(-50%);
-  left: 47px;
+  left: 93px;
   width: 260px;
 }
 .banner__around--item .content-bn h3 {
@@ -465,7 +466,7 @@ ul li {
 .banner__around2 {
   width: 100%;
   display: flex;
-  margin: 0 -15px 40px -15px;
+  margin-bottom: 70px;
 }
 .banner__around2 .bn4 {
   width: 25%;
@@ -478,12 +479,12 @@ ul li {
 }
 .banner__around2 .bn5 .bn-pro-info {
   position: absolute;
-  bottom: 10%;
+  bottom: 1%;
   text-align: center;
-  left: 50%;
+  left: 52%;
   transform: translateX(-50%);
   width: 100%;
-  padding: 0 15px;
+  padding: 0 25px;
   box-sizing: border-box;
 }
 .banner__around2 .bn5 .bn-pro-info .bn-pro-info__name {
@@ -502,6 +503,7 @@ ul li {
   color: #d6ba8d;
   font-weight: 700;
   font-family: CormorantGaramond;
+  margin-top: 15px;
 }
 .banner__around2--item {
   overflow: hidden;
@@ -764,8 +766,10 @@ ul li {
   width: 70%;
 }
 .footer__top .menu-ft ul {
+  justify-content: center;
+  width: 100%;
+  display: flex;
   padding-top: 82px;
-  padding-left: 130px;
 }
 .footer__top .menu-ft ul li {
   float: left;
@@ -1225,7 +1229,7 @@ ul li {
   }
   .footer__top .logo-ft {
     width: 50%;
-    text-align: right;
+    text-align: left;
     order: 1;
   }
   .footer__top .menu-ft {
@@ -1236,6 +1240,9 @@ ul li {
   .footer__top .menu-ft ul {
     padding-left: 0;
     padding-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .footer__top .menu-ft ul li {
     padding: 0 8px;
@@ -1243,7 +1250,7 @@ ul li {
   .footer__top .subcribe {
     order: 2;
     width: 50%;
-    text-align: center;
+    text-align: right;
   }
   .footer__bottom .copyright {
     width: 50%;
