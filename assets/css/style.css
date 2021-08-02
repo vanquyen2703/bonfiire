@@ -473,11 +473,11 @@ ul li {
   width: calc(100% * 395 / 1720);
 }
 .banner__around2 .bn6 {
-  width: calc(100% * 395 / 1720);
+  width: calc(100% * 830 / 1720);
   margin-right: 0;
 }
 .banner__around2 .bn5 {
-  width: calc(100% * 830 / 1720);
+  width: calc(100% * 395 / 1720);
 }
 .banner__around2 .bn5 .bn-pro-info {
   position: absolute;
