@@ -452,7 +452,7 @@
       }
       &--item {
         .collap-sale {
-          padding: 20px 10px 0;
+          padding: 5px 10px 0;
           .s1 {
             font-size: 10px;
           }
@@ -471,7 +471,7 @@
         }
         .content-bn {
           h3 {
-            font-size: 45px;
+            font-size: 40px;
             line-height: 40px;
           }
         }
@@ -482,25 +482,66 @@
     &__around2 {
     }
   }
+  .product {
+    padding-bottom: 50px;
+    &__title {
+      h3 {
+        a {
+          font-size: 45px;
+        }
+      }
+      .view-more {
+        display: none;
+      }
+    }
+    &__all {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+    .product__all--item {
+      width: 50%;
+      .pro-img {
+        height: auto;
+        .back-to-style {
+          opacity: 1;
+        }
+        .next-to-style {
+          opacity: 1;
+        }
+        img {
+          width: 100%;
+        }
+        .add-pro {
+          display: none;
+          .add-to-cart {
+          }
+        }
+      }
+    }
+  }
   .footer {
     &__top {
       .logo-ft {
-        width: 20%;
+        width: 50%;
         text-align: right;
+        order: 1;
       }
       .menu-ft {
-        width: 80%;
+        order: 3;
+        width: 100%;
+        margin-top: 30px;
         ul {
-          padding-left: 50px;
-          padding-top: 74px;
+          padding-left: 0;
+          padding-top: 0;
           li {
             padding: 0 8px;
           }
         }
       }
       .subcribe {
-        display: none;
-        width: 18%;
+        order: 2;
+        width: 50%;
         text-align: center;
       }
     }
@@ -589,8 +630,8 @@
         .bn-ct {
           h4 {
             font-size: 14px;
-          letter-spacing: 3px;
-          line-height: 24px;
+            letter-spacing: 3px;
+            line-height: 24px;
           }
           h3 {
             font-size: 72px;
@@ -599,6 +640,8 @@
       }
       &--item {
         height: auto;
+        padding: 0;
+        margin-bottom: 15px;
         .collap-sale {
           top: 20px;
           padding-bottom: 0;
